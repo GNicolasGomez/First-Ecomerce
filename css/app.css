@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*Globales*/
+
+a {
+    text-decoration: none;
+    color:#000;
+}
+
+
+
+
+/* Header y Navegacion*/
+.nombre-sitio{
+    margin-top: 50px;
+    margin-bottom: 50x;
+    text-align: center;
+}
+
+.nombre-sitio span {
+    color:#037bc0;
+}
+.contenedor-navegacion {
+    border-top: 1px solid #e1e1e1;
+
+}
+.nav-principal{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero{
+    background-image: url('../img/ImagenesEcommerce/principal.jpg');
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Aplicamos Grid a Categorias de productos*/
+
+img{
+    max-width: 100%; /*Ocupara el tamaño total del contenedor que lo contiene*/
+    display: block;
+}
+.categorias h2{
+    text-align: center;
+}
+
+.categoria a{
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #FFF;
+    border-bottom-right-radius: 10px;
+   
+}
+
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+
